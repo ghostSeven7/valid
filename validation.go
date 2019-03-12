@@ -67,7 +67,7 @@ func (v *Validation) Valid(obj interface{}) (b bool, code int64, err error) {
 			}
 		}
 	}
-	return true, 0, nil
+	return false, 0, nil
 }
 
 // genRule 切割并生成各个规则,并获取是否存在必传和错误码
